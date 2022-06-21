@@ -1,0 +1,1 @@
+# solinda_odoo_testclone
