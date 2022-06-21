@@ -1,0 +1,17 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_solinda_crm_business_type,solinda_crm.business_type,model_solinda_crm,base.group_user,1,1,1,1
+access_solinda_crm_project_status,solinda_crm.project_status,model_solinda_crm,base.group_user,1,1,1,1
+access_solinda_crm_project_scheme,solinda_crm.project_scheme,model_solinda_crm,base.group_user,1,1,1,1
+access_solinda_crm_wastewater_type,solinda_crm.wastewater_type,model_solinda_crm,base.group_user,1,1,1,1
+access_solinda_crm_transport_survey,solinda_crm.transport_survey,model_solinda_crm,base.group_user,1,1,1,1
+access_solinda_crm_plant_type,solinda_crm.plant_type,model_solinda_crm,base.group_user,1,1,1,1
+access_solinda_crm_new_installation,solinda_crm.new_installation,model_solinda_crm,base.group_user,1,1,1,1
+access_solinda_crm_refubrishment,solinda_crm.refubrishment,model_solinda_crm,base.group_user,1,1,1,1
+access_solinda_crm_industrial_detail,solinda_crm.industrial_detail,model_solinda_crm,base.group_user,1,1,1,1
+access_solinda_crm_pre_screening,solinda_crm.pre_screening,model_solinda_crm,base.group_user,1,1,1,1
+access_solinda_crm_coagulant_type,solinda_crm.coagulant_type,model_solinda_crm,base.group_user,1,1,1,1
+access_solinda_crm_advanced_treatments,solinda_crm.advanced_treatments,model_solinda_crm,base.group_user,1,1,1,1
+access_solinda_crm_operation_conditions,solinda_crm.operation_conditions,model_solinda_crm,base.group_user,1,1,1,1
+access_solinda_crm_water_characterizations,solinda_crm.water_characterizations,model_solinda_crm,base.group_user,1,1,1,1
+access_solinda_crm_treated_quality,solinda_crm.treated_quality,model_solinda_crm,base.group_user,1,1,1,1
+access_solinda_crm_existing_chemical,solinda_crm.existing_chemical,model_solinda_crm,base.group_user,1,1,1,1

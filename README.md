@@ -1,1 +1,1 @@
-# solinda_odoo_testclone
+# GLS_Odoo5_Prototype
