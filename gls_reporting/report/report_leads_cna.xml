@@ -64,27 +64,39 @@
                         <tbody>
                         <tr style="height: 18px;">
                             <td style="width: 37.5665%; height: 18px; padding-left: 40px;">Facility Name</td>
-                            <td style="width: 89.2082%; height: 18px;">test</td>
+                            <td style="width: 89.2082%; height: 18px;">
+                                <t t-esc="doc.facility_name"/>
+                            </td>
                         </tr>
                         <tr>
                             <td style="width: 37.5665%; padding-left: 40px;">Owning Company/Group</td>
-                            <td style="width: 89.2082%;">test</td>
+                            <td style="width: 89.2082%;">
+                                <t t-esc="doc.owning_company"/>
+                            </td>
                         </tr>
                         <tr>
                             <td style="width: 37.5665%; padding-left: 40px;">Address</td>
-                            <td style="width: 89.2082%;">test</td>
+                            <td style="width: 89.2082%;">
+                                <t t-esc="doc.address"/>
+                            </td>
                         </tr>
                         <tr>
                             <td style="width: 37.5665%; padding-left: 40px;">Contact Person</td>
-                            <td style="width: 89.2082%;">test</td>
+                            <td style="width: 89.2082%;">
+                                <t t-esc="doc.contact_person"/>
+                            </td>
                         </tr>
                         <tr>
                             <td style="width: 37.5665%; padding-left: 40px;">Telephone</td>
-                            <td style="width: 89.2082%;">test</td>
+                            <td style="width: 89.2082%;">
+                                <t t-esc="doc.telephone"/>
+                            </td>
                         </tr>
                         <tr>
                             <td style="width: 37.5665%; padding-left: 40px;">E-mail</td>
-                            <td style="width: 89.2082%;">test</td>
+                            <td style="width: 89.2082%;">
+                                <t t-esc="doc.email"/>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -151,13 +163,17 @@
                             <td style="width: 4.38%; text-align: center; height: 18px;"></td>
                             <td style="width: 37.0623%; height: 18px;">a) Proposal Submission</td>
                             <td style="width: 1.87266%; height: 18px;">:</td>
-                            <td style="width: 84.393%; height: 18px;">test</td>
+                            <td style="width: 84.393%; height: 18px;">
+                                <t t-esc="doc.proposal_submission"/>
+                            </td>
                         </tr>
                         <tr style="height: 18px; padding: 5px;">
                             <td style="width: 4.38%; text-align: center; height: 18px;"></td>
                             <td style="width: 37.0623%; height: 18px;">b) Construction Start Period</td>
                             <td style="width: 1.87266%; height: 18px;">:</td>
-                            <td style="width: 84.393%; height: 18px;">test</td>
+                            <td style="width: 84.393%; height: 18px;">
+                                <t t-esc="doc.construction_period"/>
+                            </td>
                         </tr>
                         <tr style="height: 18px;">
                             <td style="width: 4.38%; text-align: center; height: 18px;"></td>
@@ -169,7 +185,9 @@
                             <td style="width: 4.38%; text-align: center; height: 18px;">7)</td>
                             <td style="width: 37.0623%; height: 18px;">Budget/Price Limitation</td>
                             <td style="width: 1.87266%; height: 18px;">:</td>
-                            <td style="width: 84.393%; height: 18px;">test</td>
+                            <td style="width: 84.393%; height: 18px;">
+                                <t t-esc="doc.budget_limitation"/>
+                            </td>
                         </tr>
                         <tr style="height: 18px;">
                             <td style="width: 4.38%; text-align: center; height: 18px;"></td>
@@ -181,7 +199,9 @@
                             <td style="width: 4.38%; text-align: center; height: 18px;">8)</td>
                             <td style="width: 37.0623%; height: 18px;">Competitors</td>
                             <td style="width: 1.87266%; height: 18px;">:</td>
-                            <td style="width: 84.393%; height: 18px;">test</td>
+                            <td style="width: 84.393%; height: 18px;">
+                                <t t-esc="doc.competitors"/>
+                            </td>
                         </tr>
                         <tr style="height: 18px;">
                             <td style="width: 4.38%; text-align: center; height: 18px;"></td>
