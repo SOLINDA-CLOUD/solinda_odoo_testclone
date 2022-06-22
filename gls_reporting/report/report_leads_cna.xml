@@ -28,7 +28,7 @@
         </div>
     </template>
 
-    <template id="report_cna">
+    <template id="report_leads_cna">
         <t t-call="web.basic_layout">
             <div class="page">
                 <t t-foreach="docs" t-as="doc">
