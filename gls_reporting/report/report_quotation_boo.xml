@@ -81,7 +81,7 @@
                                 <td style="width: 7.85545%; height: 36px;">From</td>
                                 <td style="width: 1.97975%; height: 36px;">:</td>
                                 <td style="width: 32.0241%; height: 36px;">
-                                    <t t-esc="company.name" />
+                                    <t t-esc="doc.company_id.name" />
                                 </td>
                             </tr>
                             <tr style="height: 18px;">
