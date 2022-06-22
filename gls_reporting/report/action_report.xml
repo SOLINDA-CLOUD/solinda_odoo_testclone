@@ -42,7 +42,7 @@
             <field name="binding_type">report</field>
         </record>
 
-        <record id="report_quotation_cna_action" model="ir.actions.report">
+        <record id="report_leads_cna_action" model="ir.actions.report">
             <field name="name">CNA Report</field>
             <field name="model">crm.lead</field>
             <field name="report_type">qweb-pdf</field>
@@ -50,7 +50,7 @@
             <field name="report_file">gls_reporting.report_leads_cna</field>
             <field name="paperformat_id" ref="gls_reporting.report_paperformat_a4_portrait_quotation_gls" />
             <field name="print_report_name">'CNA - %s' % object.name</field>
-            <field name="binding_model_id" ref="crm.crm_lead_view_form"/>
+            <field name="binding_model_id" ref="crm.model_crm_lead"/>
             <field name="binding_type">report</field>
         </record>
 
