@@ -27,6 +27,8 @@
         'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
+        'report/report_action.xml',
+        'report/report_leads_cna.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
