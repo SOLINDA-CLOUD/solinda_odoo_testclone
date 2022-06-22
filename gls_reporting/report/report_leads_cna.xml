@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="external_layout_standard_printout_gls">
+        <div class="header">
+            <div class="col-xs-2">
+                <t t-set="company" t-value="res_company"></t>
+                <image src="/ati_srf_report/static/src/img/logo2.png" style="display: inline;width: 120px;height: 75px;"/>
+                <!-- <h3>PT. SRI REJEKI FERTILIZER</h3> -->
+            </div>
+        </div>
+        <div class="article o_report_layout_standard">
+            <t t-raw="0" />
+        </div>
+        <div class="footer">
+            <div class="text-center">
+                <strong>PT. GAPURA LIQOUA SOLUTIONS</strong>
+                <br/>
+                Jl Cihampelas No. 214A, Bandung 40131, West Java, Indonesia
+                <ul class="list-inline mb4">
+                    <li class="list-inline-item">p.+62 22 2035 280</li>
+                    <li class="list-inline-item">f.+62 22 2035 290</li>
+                    <li class="list-inline-item">e.info@gapuraliquasolutions.com </li>
+                    <li class="list-inline-item">www.gapuraliquasolutions.com</li>
+                    <!-- <li t-if="doc.company_id.vat" class="list-inline-item"><t t-esc="(company.country_id.vat_label or 'Tax ID').replace(' ','\N{NO-BREAK SPACE}')"/>: <span t-esc="company_id.vat.replace(' ','\N{NO-BREAK SPACE}')"/></li> -->
+                </ul>
+            </div>
+        </div>
+    </template>
+
+    <template id="report_cna">
+        <t t-call="web.basic_layout">
+            <div class="page">
+                <t t-foreach="docs" t-as="doc">
+                    <header>
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <!-- <image src="/gls_reporting/static/src/img/gls_logo.png" style="display: inline;width: 225px;height: 125px;"/> -->
+                                <img t-if="doc.company_id.logo" t-att-src="image_data_uri(doc.company_id.logo)" style="max-height: 125px;" alt="Logo" />
+                            </div>
+                            <div class="col-xs-2">
+
+                            </div>
+                        </div>
+                    </header>
+
+                    <h1 style="text-align: center;"><strong>CUSTOMER NEED ANALYSIS</strong></h1>
+                    <h1 style="text-align: center;"><strong>REPORT</strong></h1>
+                    <h2 style="text-align: center;"><strong>WATER/WASTEWATER TREATMENT</strong></h2>
+                    
+                    <table style="table-layout: fixed; border-collapse: collapse; width: 100%; height: 18px; vertical-align: top; margin-left: 30px;" border="0">
+                        <tbody>
+                            <tr style="height: 18px;">
+                                <td style="text-align: center; height: 18px; width: 99.9997%;" colspan="7"></td>
+                            </tr>
+                            <tr style="height: 18px;">
+                                <td style="width: 1.13636%; text-align: center; height: 18px;">1)</td>
+                            <td style="width: 48.1468%; height: 18px;">General Details</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table style="height: 19px; width: 100.225%; table-layout: fixed; border-collapse: collapse; vertical-align: top; margin-left: 30px;" border="1">
+                        <tbody>
+                        <tr style="height: 18px;">
+                            <td style="width: 37.5665%; height: 18px; padding-left: 40px;">Facility Name</td>
+                            <td style="width: 89.2082%; height: 18px;">test</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 37.5665%; padding-left: 40px;">Owning Company/Group</td>
+                            <td style="width: 89.2082%;">test</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 37.5665%; padding-left: 40px;">Address</td>
+                            <td style="width: 89.2082%;">test</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 37.5665%; padding-left: 40px;">Contact Person</td>
+                            <td style="width: 89.2082%;">test</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 37.5665%; padding-left: 40px;">Telephone</td>
+                            <td style="width: 89.2082%;">test</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 37.5665%; padding-left: 40px;">E-mail</td>
+                            <td style="width: 89.2082%;">test</td>
+                        </tr>
+                    </tbody>
+                </table>
+                                    
+                <table style="table-layout: fixed; border-collapse: collapse; width: 100%; height: 634px; vertical-align: top; margin-left: 30px;" border="0">
+                    <tbody>
+                        <tr style="height: 100px;">
+                            <td style="width: 4.38%; text-align: center; height: 100px;">2)</td>
+                            <td style="width: 37.0623%; height: 100px;">Type of Business</td>
+                            <td style="width: 1.87266%; height: 100px;">:</td>
+                            <td style="width: 84.393%; height: 100px;">
+                                <ul>
+                                    <li>Industrial</li>
+                                    <li>Properties</li>
+                                    <li>Hospitals</li>
+                                    <li>Others,</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr style="height: 82px;">
+                            <td style="width: 4.38%; text-align: center; height: 82px;">3)</td>
+                            <td style="width: 37.0623%; height: 82px;">Client Category (Purchase Power)</td>
+                            <td style="width: 1.87266%; height: 82px;">:</td>
+                            <td style="width: 84.393%; height: 82px;">
+                                <ul>
+                                    <li>High End</li>
+                                    <li>Mid End</li>
+                                    <li>Low End</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr style="height: 82px;">
+                            <td style="width: 4.38%; text-align: center; height: 82px;">4)</td>
+                            <td style="width: 37.0623%; height: 82px;">Project Status</td>
+                            <td style="width: 1.87266%; height: 82px;">:</td>
+                            <td style="width: 84.393%; height: 82px;">
+                                <ul>
+                                    <li>Budgeting</li>
+                                    <li>Tendering</li>
+                                    <li>Others,</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr style="height: 100px;">
+                            <td style="width: 4.38%; text-align: center; height: 100px;">5)</td>
+                            <td style="width: 37.0623%; height: 100px;">Project Scheme</td>
+                            <td style="width: 1.87266%; height: 100px;">:</td>
+                            <td style="width: 84.393%; height: 100px;">
+                                <ul>
+                                    <li>BOO</li>
+                                    <li>BOT</li>
+                                    <li>TURN KEY</li>
+                                    <li>Others,</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr style="height: 18px;">
+                            <td style="width: 4.38%; text-align: center; height: 18px;">6)</td>
+                            <td style="width: 37.0623%; height: 18px;">Timeline</td>
+                            <td style="width: 1.87266%; height: 18px;"></td>
+                            <td style="width: 84.393%; height: 18px;"></td>
+                        </tr>
+                        <tr style="height: 18px; padding: 5px;">
+                            <td style="width: 4.38%; text-align: center; height: 18px;"></td>
+                            <td style="width: 37.0623%; height: 18px;">a) Proposal Submission</td>
+                            <td style="width: 1.87266%; height: 18px;">:</td>
+                            <td style="width: 84.393%; height: 18px;">test</td>
+                        </tr>
+                        <tr style="height: 18px; padding: 5px;">
+                            <td style="width: 4.38%; text-align: center; height: 18px;"></td>
+                            <td style="width: 37.0623%; height: 18px;">b) Construction Start Period</td>
+                            <td style="width: 1.87266%; height: 18px;">:</td>
+                            <td style="width: 84.393%; height: 18px;">test</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                            <td style="width: 4.38%; text-align: center; height: 18px;"></td>
+                            <td style="width: 37.0623%; height: 18px;"></td>
+                            <td style="width: 1.87266%; height: 18px;"></td>
+                            <td style="width: 84.393%; height: 18px;"></td>
+                        </tr>
+                        <tr style="height: 18px;">
+                            <td style="width: 4.38%; text-align: center; height: 18px;">7)</td>
+                            <td style="width: 37.0623%; height: 18px;">Budget/Price Limitation</td>
+                            <td style="width: 1.87266%; height: 18px;">:</td>
+                            <td style="width: 84.393%; height: 18px;">test</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                            <td style="width: 4.38%; text-align: center; height: 18px;"></td>
+                            <td style="width: 37.0623%; height: 18px;"></td>
+                            <td style="width: 1.87266%; height: 18px;"></td>
+                            <td style="width: 84.393%; height: 18px;"></td>
+                        </tr>
+                        <tr style="height: 18px;">
+                            <td style="width: 4.38%; text-align: center; height: 18px;">8)</td>
+                            <td style="width: 37.0623%; height: 18px;">Competitors</td>
+                            <td style="width: 1.87266%; height: 18px;">:</td>
+                            <td style="width: 84.393%; height: 18px;">test</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                            <td style="width: 4.38%; text-align: center; height: 18px;"></td>
+                            <td style="width: 37.0623%; height: 18px;"></td>
+                            <td style="width: 1.87266%; height: 18px;"></td>
+                            <td style="width: 84.393%; height: 18px;"></td>
+                        </tr>
+                        <tr style="height: 18px;">
+                            <td style="width: 4.38%; text-align: center; height: 18px;">9)</td>
+                            <td style="width: 37.0623%; height: 18px;">Other issue /Other Concern</td>
+                            <td style="width: 1.87266%; height: 18px;">:</td>
+                            <td style="width: 84.393%; height: 18px;">(please attach a Questionnaire-Site Survey Form)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </t>    
+        </div>  
+    </t>
+
+</template>
