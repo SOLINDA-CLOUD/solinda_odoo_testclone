@@ -28,6 +28,7 @@
         # 'views/views.xml',
         # 'views/templates.xml',
         'report/action_report.xml',
+        'report/report_leads_cna.xml',
         'report/report_quotation_boo.xml',
         'report/report_quotation_oms.xml',
         # 'report/report_quotation_trading.xml',
