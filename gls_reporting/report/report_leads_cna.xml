@@ -157,7 +157,7 @@
                                 <td style="width: 37.0623%; height: 18px;">Type of Business</td>
                                 <td style="width: 1.87266%; height: 18px;">:</td>
                                 <td style="width: 84.393%; height: 18px;">
-                                    <!-- <span t-field="doc.business_type_cna.name"/> -->
+                                    <span t-field="doc.business_type_cna"/>
                                 </td>
                             </tr>
                             <tr style="height: 18px;">
