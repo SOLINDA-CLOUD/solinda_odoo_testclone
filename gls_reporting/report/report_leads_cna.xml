@@ -50,6 +50,12 @@
                                     
                     <table style="table-layout: fixed; border-collapse: collapse; width: 100%; height: 634px; vertical-align: top; margin-left: 30px;" border="0">
                         <tbody>
+                             <tr style="height: 18px;">
+                                <td style="width: 4.38%; text-align: center; height: 18px;"></td>
+                                <td style="width: 37.0623%; height: 18px;"></td>
+                                <td style="width: 1.87266%; height: 18px;"></td>
+                                <td style="width: 84.393%; height: 18px;"></td>
+                            </tr>
                             <tr style="height: 18px;">
                                 <td style="width: 4.38%; text-align: center; height: 18px;">1)</td>
                                 <td style="width: 37.0623%; height: 18px;">General Details</td>
@@ -151,7 +157,7 @@
                                 <td style="width: 37.0623%; height: 18px;">Type of Business</td>
                                 <td style="width: 1.87266%; height: 18px;">:</td>
                                 <td style="width: 84.393%; height: 18px;">
-                                    <t t-esc="doc.business_type_cna"/>
+                                    <t t-field="doc.business_type_cna"/>
                                 </td>
                             </tr>
                             <tr style="height: 18px;">
@@ -165,7 +171,8 @@
                                 <td style="width: 37.0623%; height: 18px;">Client Category (Purchase Power)</td>
                                 <td style="width: 1.87266%; height: 18px;">:</td>
                                 <td style="width: 84.393%; height: 18px;">
-                                    <t t-esc="doc.client_category"/>
+                                    <t t-set="values" t-value="dict([('high','High End'),('mid','Mid End'), (False,False)])"/> 
+                                    <t t-esc="values[doc.client_category]"/>
                                 </td>
                             </tr>
                             <tr style="height: 18px;">
@@ -179,7 +186,7 @@
                                 <td style="width: 37.0623%; height: 18px;">Project Status</td>
                                 <td style="width: 1.87266%; height: 18px;">:</td>
                                 <td style="width: 84.393%; height: 18px;">
-                                    <t t-esc="doc.project_status"/>
+                                    <t t-field="doc.project_status"/>
                                 </td>
                             </tr>
                             <tr style="height: 18px;">
@@ -193,7 +200,7 @@
                                 <td style="width: 37.0623%; height: 18px;">Project Scheme</td>
                                 <td style="width: 1.87266%; height: 18px;">:</td>
                                 <td style="width: 84.393%; height: 18px;">
-                                    <t t-esc="doc.project_scheme"/>
+                                    <t t-field="doc.project_scheme"/>
                                 </td>
                             </tr>
                             <tr style="height: 18px;">
