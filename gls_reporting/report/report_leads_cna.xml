@@ -157,7 +157,7 @@
                                 <td style="width: 37.0623%; height: 18px;">Type of Business</td>
                                 <td style="width: 1.87266%; height: 18px;">:</td>
                                 <td style="width: 84.393%; height: 18px;">
-                                    <t t-field="doc.business_type_cna.name"/>
+                                    <t t-esc="doc.business_type_cna.name"/>
                                 </td>
                             </tr>
                             <tr style="height: 18px;">
@@ -186,7 +186,7 @@
                                 <td style="width: 37.0623%; height: 18px;">Project Status</td>
                                 <td style="width: 1.87266%; height: 18px;">:</td>
                                 <td style="width: 84.393%; height: 18px;">
-                                    <t t-field="doc.project_status.name"/>
+                                    <t t-esc="doc.project_status.name"/>
                                 </td>
                             </tr>
                             <tr style="height: 18px;">
@@ -200,7 +200,7 @@
                                 <td style="width: 37.0623%; height: 18px;">Project Scheme</td>
                                 <td style="width: 1.87266%; height: 18px;">:</td>
                                 <td style="width: 84.393%; height: 18px;">
-                                    <t t-field="doc.project_scheme.name"/>
+                                    <t t-esc="doc.project_scheme.name"/>
                                 </td>
                             </tr>
                             <tr style="height: 18px;">
