@@ -5,6 +5,9 @@
       <field name="model">crm.lead</field>
       <field name="inherit_id" ref="crm.crm_lead_view_form"/>
       <field name="arch" type="xml">
+        <field name="tag_ids" position="before">
+          <field name="periode"/>
+        </field>
         <xpath expr="//notebook" position="inside">
           <page string="Kuesioner">
             <group string="Type of business">
@@ -181,6 +184,18 @@
             </group>
             <group string="Other Issue/Other Concern">
               <field name="other_issue" />
+            </group>
+          </page>
+          <page string="BOO">
+            <group string="Supports">
+              <field name="supervisor" />
+              <field name="engineer" />
+              <field name="office" />
+              <field name="operator" />
+            </group>
+            <group string="Responsibility">
+              <field name="president_director" />
+              <field name="director" />
             </group>
           </page>
         </xpath>
