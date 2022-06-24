@@ -287,15 +287,15 @@ class CrmLead(models.Model):
 
     other_issue = fields.Binary('Other Issue/Other Concern')
 
-    #### BOO ###
+    # BOO 
     periode = fields.Float(string='Period')
     
-    #### Supports ####
+    # Supports
     supervisor = fields.Char(string='Supervisor')
     engineer = fields.Char(string='Engineer')
     office = fields.Char(string='Office')
     operator = fields.Char(string='Operator')
 
-    #### Responsibilty Centre ####
+    # Responsibilty Centre 
     president_director = fields.Char('President Director')
     director = fields.Char('Director')
