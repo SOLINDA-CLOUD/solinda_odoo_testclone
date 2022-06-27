@@ -55,7 +55,6 @@
             <group string="Responsibility">
               <field name="president_director" />
               <field name="director" />
-              <field name="order_id" />
             </group>
           </page>
         </notebook>
