@@ -14,6 +14,17 @@ class SaleOrder(models.Model):
     payment_terms = fields.Html(string = 'Payment Terms')
     revitalization_period = fields.Char(string = 'Revitalization Period')
     deduct_dp = fields.Boolean('Deduct DP')
+
+    # BOO 
+    periode = fields.Float(string='Period')
+    # Supports #
+    supervisor = fields.Char(string='Supervisor')
+    engineer = fields.Char(string='Engineer')
+    office = fields.Char(string='Office')
+    operator = fields.Char(string='Operator')
+    # Responsibilty Centre #
+    president_director = fields.Char('President Director')
+    director = fields.Char('Director')
     
     @api.onchange('payment_schedule_line_ids')
     def _onchange_payment_schedule_line_ids(self):

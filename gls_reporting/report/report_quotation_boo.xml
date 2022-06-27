@@ -53,9 +53,13 @@
                         </div>
                         
                     </div> -->
-                    <h5 style="text-decoration: underline; text-align:center;">
+                    <h2 style="text-decoration: underline; text-align:center;">
                         <strong>QUOTATION</strong>
-                    </h5>
+                    </h2>
+                    <p class="text-center">
+                    <!-- No: 
+                        <t t-esc="doc.name"/> -->
+                    </p>
                     <table style="table-layout: fixed; border-collapse: collapse; width: 100%; height: 144px;">
                         <tbody style="font-size: 15px;">
                             <tr style="height: 18px;">
@@ -87,7 +91,9 @@
                             <tr style="height: 18px;">
                                 <td style="width: 9.51851%; height: 18px;">Attn</td>
                                 <td style="width: 1.97972%; height: 18px;">:</td>
-                                <td style="width: 38.1214%; height: 18px;">Procurement Dept</td>
+                                <td style="width: 38.1214%; height: 18px;">
+                                    <t t-esc="doc.attn_id"/>
+                                </td>
                                 <td style="width: 8.52077%; height: 18px;"></td>
                                 <td style="width: 7.85545%; height: 18px;">Ref</td>
                                 <td style="width: 1.97975%; height: 18px;">:</td>
@@ -106,7 +112,7 @@
                                 <td style="width: 7.85545%; height: 36px;">Subject</td>
                                 <td style="width: 1.97975%; height: 36px;">:</td>
                                 <td style="width: 32.0241%; height: 36px;">
-                                    <strong>Spare parts Grundfos (Valve)</strong>
+                                    <t t-esc="doc.opportunity_id"/>
                                 </td>
                             </tr>
                             <tr style="height: 18px;">
@@ -117,34 +123,38 @@
                                     <div>
                                         Dear Sir,<br />
                                     <br />
-                                        We have the pleasure to offer you the under mentioned goods and services with
+                                        We have the pleasure to offer you the below mentioned goods and services with
                                         the best terms and <br />
-                                        conditions hereinafter, as follow:
-                                    </div>
+                                        conditions hereinafter, as follow:</div>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="text-align: left; width: 99.9997%;" colspan="7">
-                                    <table style="table-layout: fixed; border-collapse: collapse; width: 100%; height: 36px; vertical-align: top; margin-left: 30px;" border="1">
+                                    <table style="table-layout: fixed; border-collapse: collapse; width: 100%; height: 36px; vertical-align: top; margin-left: 30px;" border="0">
                                         <tbody>
                                             <tr style="height: 18px; padding: 5px;">
                                                 <td style="width: 1.94013%; text-align: center; height: 18px;">-</td>
                                                 <td style="width: 19.5677%; height: 18px;">Cooperation Scheme</td>
                                                 <td style="width: 1.94019%; height: 18px;">:</td>
-                                                <td style="width: 76.5521%; height: 18px;">Build Operate Owned (BOO)
+                                                <td style="width: 76.5521%; height: 18px;">
+                                                    <span t-field="doc.tag_ids"/>
                                                 </td>
                                             </tr>
                                             <tr style="height: 18px; padding: 5px;">
                                                 <td style="width: 1.94013%; text-align: center; height: 18px;">-</td>
                                                 <td style="width: 19.5677%; height: 18px;">Period</td>
                                                 <td style="width: 1.94019%; height: 18px;">:</td>
-                                                <td style="width: 76.5521%; height: 18px;">5 years</td>
+                                                <td style="width: 76.5521%; height: 18px;">
+                                                    <t t-esc="doc.periode"/>
+                                                </td>
                                             </tr>
                                             <tr style="height: 18px; padding: 5px;">
                                                 <td style="width: 1.94013%; text-align: center;">-</td>
                                                 <td style="width: 19.5677%;">Price</td>
                                                 <td style="width: 1.94019%;">:</td>
-                                                <td style="width: 76.5521%;">Rp. 10.500/m3</td>
+                                                <td style="width: 76.5521%;">
+                                                    <t t-esc="doc.price_unit"/>
+                                                </td>
                                             </tr>
                                             <tr style="height: 18px; padding: 5px;">
                                                 <td style="width: 1.94013%; text-align: center;">-</td>
@@ -152,8 +162,8 @@
                                                 <td style="width: 1.94019%;">:</td>
                                                 <td style="width: 76.5521%;">- Price exclude all Goverment Taxes and
                                                         Retribution<br />
-                                                        - Quotation Validity : 4 weeks<br />
-                                                        - Revitalization period : 5-6 month<br />
+                                                        - Quotation Validity : <t t-esc="doc.quotation_validity"/><br />
+                                                        - Revitalization period : <t t-esc="doc.revitalization_period"/><br />
                                                         - Detail terms &amp; condition reffering to the contract</td>
                                             </tr>
                                             <tr style="height: 18px; padding: 5px;">
@@ -161,25 +171,32 @@
                                                 <td style="width: 19.5677%;">References</td>
                                                 <td style="width: 1.94019%;">:</td>
                                                 <td style="width: 76.5521%;">- Grand Hyatt Bali<br />
-                                                        - The St Regis Bali Resort<br />
-                                                        - Padma Group<br />
-                                                        - Bvlgari Hotel &amp; Resort</td>
+                                                                - The St Regis Bali Resort<br />
+                                                                - Padma Group<br />
+                                                                - Bvlgari Hotel &amp; Resort</td>
                                             </tr>
                                             <tr style="height: 18px; padding: 5px;">
                                                 <td style="width: 1.94013%; text-align: center;">-</td>
                                                 <td style="width: 19.5677%;">Supports</td>
                                                 <td style="width: 1.94019%;">:</td>
-                                                <td style="width: 76.5521%;">- 24 hours operator<br />
-                                                        - Supervisor (Iran Purnama)<br />
-                                                        - Engineer (Zaelani Sidik)<br />
-                                                        - Office : Jln. Soka I No. 3, Puri Kampial - Nusa Dua, Bali</td>
+                                                <td style="width: 76.5521%;">
+                                                    - supervisor : <t t-esc="doc.supervisor"/><br />
+                                                    - engineer: <t t-esc="doc.engineer"/><br />
+                                                    - office : <t t-esc="doc.office"/><br />
+                                                    - operator : <t t-esc="doc.operator"/>
+                                                    <!-- - 24 hours operator<br />
+                                                    - Supervisor (Iran Purnama)<br />
+                                                    - Engineer (Zaelani Sidik)<br />
+                                                    - Office : Jln. Soka I No. 3, Puri Kampial - Nusa Dua, Bali -->
+                                                </td>
                                             </tr>
                                             <tr style="height: 18px; padding: 5px;">
                                                 <td style="width: 1.94013%; text-align: center;">-</td>
                                                 <td style="width: 19.5677%;">Responsibility Centre</td>
                                                 <td style="width: 1.94019%;">:</td>
-                                                <td style="width: 76.5521%;">- Presiden Director : I Ketut Wiguna<br />
-                                                                                - Director : Olaf K.Spiro</td>
+                                                <td style="width: 76.5521%;">
+                                                    - Presiden Director : <t t-esc="doc.president_director"/><br />
+                                                    - Director : <t t-esc="doc.director"/></td>
                                             </tr>
                                             <tr style="height: 18px; padding: 5px;">
                                                 <td style="width: 1.94013%; text-align: center;"></td>
@@ -197,9 +214,10 @@
                                                     <br />
                                                     <br />
                                                     <br />
-                                                    <span style="text-decoration: underline;">I Ketut Wiguna<br />
+                                                    <span style="text-decoration: underline;"><t t-esc="doc.president_director"/><br />
                                                     </span>
-                                                </strong>Presiden Director</td>
+                                                    </strong>Presiden Director
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -223,11 +241,11 @@
                                 <li t-if="doc.company_id.email" class="list-inline-item">e. <span t-field="doc.company_id.email" />
                                 </li>
                                 <li t-if="doc.company_id.website" class="list-inline-item">
-                                <span t-field="doc.company_id.website" />
+                                    <span t-field="doc.company_id.website" />
                                 </li>
                                 <li t-if="doc.company_id.vat" class="list-inline-item">
-                                <t t-esc="(doc.company_id.country_id.vat_label or 'Tax ID').replace(' ','\N{NO-BREAK SPACE}')" />
-                                <span t-esc="company_id.vat.replace(' ','\N{NO-BREAK SPACE}')" />
+                                    <t t-esc="(doc.company_id.country_id.vat_label or 'Tax ID').replace(' ','\N{NO-BREAK SPACE}')" />
+                                                                        :    <span t-esc="company_id.vat.replace(' ','\N{NO-BREAK SPACE}')" />
                                 </li>
                             </ul>
                             <div name="financial_infos">
