@@ -162,8 +162,8 @@
                                                 <td style="width: 1.94019%;">:</td>
                                                 <td style="width: 76.5521%;">- Price exclude all Goverment Taxes and
                                                         Retribution<br />
-                                                        - Quotation Validity : <t t-esc="doc.quotation_validity"/><br />
-                                                        - Revitalization period : <t t-esc="doc.revitalization_period"/><br />
+                                                        - Quotation Validity : <br />
+                                                        - Revitalization period : <br />
                                                         - Detail terms &amp; condition reffering to the contract</td>
                                             </tr>
                                             <tr style="height: 18px; padding: 5px;">

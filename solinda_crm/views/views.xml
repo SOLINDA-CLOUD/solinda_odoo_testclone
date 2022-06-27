@@ -186,18 +186,6 @@
               <field name="other_issue" />
             </group>
           </page>
-          <!-- <page string="BOO">
-            <group string="Supports">
-              <field name="supervisor" />
-              <field name="engineer" />
-              <field name="office" />
-              <field name="operator" />
-            </group>
-            <group string="Responsibility">
-              <field name="president_director" />
-              <field name="director" />
-            </group>
-          </page> -->
         </xpath>
       </field>
     </record>
