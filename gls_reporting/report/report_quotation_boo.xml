@@ -171,8 +171,8 @@
                                                 <td style="width: 19.5677%;">References</td>
                                                 <td style="width: 1.94019%;">:</td>
                                                 <td style="width: 76.5521%;">
-                                                    <t t-if="doc.tag_ids.street == 'BOO'">
-                                                        <span t-field="doc.tag_ids.street"/>
+                                                    <t t-if="doc.tag_ids.name == 'BOO'">
+                                                        <p>-<span t-field="doc.tag_ids.name"/></p>
                                                     </t> 
                                                 </td>
                                             </tr>
