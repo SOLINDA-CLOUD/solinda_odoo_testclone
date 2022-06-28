@@ -92,7 +92,7 @@
                                 <td style="width: 9.51851%; height: 18px;">Attn</td>
                                 <td style="width: 1.97972%; height: 18px;">:</td>
                                 <td style="width: 38.1214%; height: 18px;">
-                                    <t t-esc="doc.attn_id"/>
+                                    <!-- <t t-esc="doc.attn_id"/> -->
                                 </td>
                                 <td style="width: 8.52077%; height: 18px;"></td>
                                 <td style="width: 7.85545%; height: 18px;">Ref</td>
@@ -153,7 +153,7 @@
                                                 <td style="width: 19.5677%;">Price</td>
                                                 <td style="width: 1.94019%;">:</td>
                                                 <td style="width: 76.5521%;">
-                                                    <t t-esc="doc.price_unit"/>
+                                                    <t t-esc="doc.order_line.price_unit"/>
                                                 </td>
                                             </tr>
                                             <tr style="height: 18px; padding: 5px;">
@@ -170,10 +170,10 @@
                                                 <td style="width: 1.94013%; text-align: center;">-</td>
                                                 <td style="width: 19.5677%;">References</td>
                                                 <td style="width: 1.94019%;">:</td>
-                                                <td style="width: 76.5521%;">- Grand Hyatt Bali<br />
-                                                                - The St Regis Bali Resort<br />
-                                                                - Padma Group<br />
-                                                                - Bvlgari Hotel &amp; Resort</td>
+                                                <td style="width: 76.5521%;">
+                                                    <t t-if ="doc.tag_ids == 'BOO'">
+                                                        <span t-field="doc.tag_ids"
+                                                </td>
                                             </tr>
                                             <tr style="height: 18px; padding: 5px;">
                                                 <td style="width: 1.94013%; text-align: center;">-</td>
@@ -245,7 +245,7 @@
                                 </li>
                                 <li t-if="doc.company_id.vat" class="list-inline-item">
                                     <t t-esc="(doc.company_id.country_id.vat_label or 'Tax ID').replace(' ','\N{NO-BREAK SPACE}')" />
-                                                                        :    <span t-esc="company_id.vat.replace(' ','\N{NO-BREAK SPACE}')" />
+                                    :    <span t-esc="doc.company_id.vat.replace(' ','\N{NO-BREAK SPACE}')" />
                                 </li>
                             </ul>
                             <div name="financial_infos">
