@@ -30,12 +30,12 @@
         <field name="description" position="before">
           <field name="tried" />
         </field>
-        <xpath expr="//field[@name='line_ids']/tree/field[@name='name']" position="after">
+        <!-- <xpath expr="//field[@name='line_ids']/tree/field[@name='name']" position="after">
           <field name="project_code"/>
         </xpath>
         <xpath expr="//field[@name='line_ids']/tree/field[@name='project_code']" position="after">
           <field name="budget_code"/>
-        </xpath>
+        </xpath> -->
       </field>
     </record>
     
