@@ -6,6 +6,12 @@
         <field name="name">purchase.request.line.tree</field>
         <field name="model">purchase.request.line</field>
         <field name="arch" type="xml">
+            <xpath expr="//field[@name='line_ids']/tree/field[@name='reason_qty_different']" position="after">
+                <field name="project_code"/>
+            </xpath>
+            <xpath expr="//field[@name='line_ids']/tree/field[@name='project_code']" position="after">
+                <field name="budget_code"/>
+            </xpath>
             <tree
                 name="Purchase Request Lines"
                 create="false"
