@@ -1,0 +1,45 @@
+<odoo>
+  <data>
+    <record id="purchase_view_form" model="ir.ui.view">
+      <field name="name">purchase.requisition.form</field>
+      <field name="model">purchase.requisition</field>
+      <field name="inherit_id" ref="purchase_requisition.view_purchase_requisition_form"/>
+      <field name="arch" type="xml">
+        <field name="origin" position="after">
+          <field name="merk_try" />
+        </field>
+        <xpath expr="//field[@name='line_ids']/tree/field[@name='product_qty']" position="after">
+          <field name="merk_recommended"/>
+        </xpath><xpath expr="//field[@name='line_ids']/tree/field[@name='qty_ordered']" position="after">
+          <field name="price_target"/>
+        </xpath>
+        <xpath expr="//field[@name='line_ids']/tree/field[@name='schedule_date']" position="after">
+          <field name="date_plan_required"/>
+        </xpath>
+        <xpath expr="//field[@name='line_ids']/tree/field[@name='date_plan_required']" position="after">
+          <field name="delivery_location_id"/>
+        </xpath>
+      </field>
+    </record>
+
+    <record id="purchase_view_form" model="ir.ui.view">
+      <field name="name">purchase.request.form</field>
+      <field name="model">purchase.request</field>
+      <field name="inherit_id" ref="	purchase_request.view_purchase_request_formm"/>
+      <field name="arch" type="xml">
+
+        <xpath expr="//field[@name='line_ids']/tree/field[@name='name']" position="after">
+          <field name="project_code"/>
+        </xpath>
+        <xpath expr="//field[@name='line_ids']/tree/field[@name='project_code']" position="after">
+          <field name="budget_code"/>
+        </xpath>
+        
+      </field>
+    </record>
+    
+
+
+
+  </data>
+</odoo>
