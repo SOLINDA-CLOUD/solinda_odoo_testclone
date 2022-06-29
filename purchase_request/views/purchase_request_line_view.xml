@@ -158,11 +158,16 @@
                             <field name="currency_id" attrs="{'invisible': True}" />
                             <field name="cancelled" />
 
-                            <field name="project_code" />
-                            <field name="budget_code" />
+                         
 
                         </group>
                     </group>
+
+                    <group>
+                        <field name="project_code" />
+                        <field name="budget_code" />
+                    </group>
+
                     <group name="specifications">
                         <separator string="Specifications" />
                         <newline />
