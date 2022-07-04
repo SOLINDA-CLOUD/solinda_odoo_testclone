@@ -30,6 +30,9 @@ class PurchaseRequisitionLine(models.Model):
     delivery_location_id = fields.Many2one(string='Delivery Location', comodel_name='delivery.location', ondelete='restrict')
 
 class PurchaseRequest(models.Model):
+    _inherit = 'purchase.request'
+
+class PurchaseRequestLine(models.Model):
     _inherit = 'purchase.request.line'
 
     project_code = fields.Char(string='Project Code')
