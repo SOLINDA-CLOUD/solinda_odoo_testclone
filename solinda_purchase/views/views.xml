@@ -27,15 +27,12 @@
       <field name="model">purchase.request</field>
       <field name="inherit_id" ref="purchase_request.view_purchase_request_form"/>
       <field name="arch" type="xml">
-        <field name="description" position="before">
-          <field name="tried" />
-        </field>
-        <!-- <xpath expr="//field[@name='line_ids']/tree/field[@name='name']" position="after">
+        <xpath expr="//field[@name='purchase_request_line']/tree/field[@name='purchase_state']" position="after">
           <field name="project_code"/>
         </xpath>
-        <xpath expr="//field[@name='line_ids']/tree/field[@name='project_code']" position="after">
+        <xpath expr="//field[@name='purchase_request_line']/tree/field[@name='project_code']" position="after">
           <field name="budget_code"/>
-        </xpath> -->
+        </xpath>
       </field>
     </record>
     

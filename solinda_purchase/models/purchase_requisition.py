@@ -29,5 +29,8 @@ class PurchaseRequisitionLine(models.Model):
     date_plan_required = fields.Date('Date Plan Required')
     delivery_location_id = fields.Many2one(string='Delivery Location', comodel_name='delivery.location', ondelete='restrict')
 
+class PurchaseRequest(models.Model):
+    _inherit = 'purchase.request'
 
-
+    project_code = fields.Char(string='Project Code')
+    budget_code = fields.Char(string='Budget Code')
