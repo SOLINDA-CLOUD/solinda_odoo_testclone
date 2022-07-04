@@ -201,6 +201,13 @@
                                         width="0.1"
                                         options='{"warn": true}'
                                     />
+
+                                    
+                                    <!-- ADDING -->
+                                    <field name="project_code" />
+                                    <field name="budget_code" />
+                                
+                                
                                 </tree>
                             </field>
                             <group class="oe_subtotal_footer oe_right">

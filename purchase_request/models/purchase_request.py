@@ -152,6 +152,12 @@ class PurchaseRequest(models.Model):
         store=True,
     )
 
+    ###### ADDING #######
+    project_code = fields.Char(string='Project Code')
+    budget_code = fields.Char(string='Budget Code')
+
+
+
     @api.depends("line_ids", "line_ids.estimated_cost")
     def _compute_estimated_cost(self):
         for rec in self:
