@@ -104,7 +104,7 @@
                                             <t t-esc="no"/>
                                         </td>
                                         <td style="width: 15.2829%; border: 1px solid black;">
-                                            <!-- <t t-esc="line.no"/> -->
+                                            <t t-esc="line.product_id.default_code"/>
                                         </td>
                                         <td style="width: 35.7621%; text-align: left; border: 1px solid black;">
                                             <t t-esc="line.name"/>
@@ -116,10 +116,10 @@
                                             <span t-field="line.product_uom_id"/>
                                         </td>
                                         <td style="width: 12.7203%; text-align: center; border: 1px solid black;">
-                                            <span t-field="line.project_code"/>
+                                            <span t-field="line.project_code_id"/>
                                         </td>
                                         <td style="width: 14.3986%; text-align: center; border: 1px solid black;">
-                                            <t t-esc="line.budget_code"/>
+                                            <t t-esc="line.budget_code_pr"/>
                                         </td>
                                     </tr>
                                     <t t-set="no" t-value="no + 1"/>
