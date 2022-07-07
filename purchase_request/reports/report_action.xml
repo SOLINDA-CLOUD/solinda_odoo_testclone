@@ -26,7 +26,7 @@
             <field name="report_file">solinda_purchase.report_pr</field>
             <field name="paperformat_id" ref="gls_reporting.report_paperformat_a4_portrait_quotation_gls" />
             <field name="print_report_name">'RFQ - %s' % object.name</field>
-            <field name="binding_model_id" ref="purchase_request.view_purchase_request_form"/>
+            <field name="binding_model_id" ref="purchase_request.model_purchase_request"/>
             <field name="binding_type">report</field>
         </record>
 
