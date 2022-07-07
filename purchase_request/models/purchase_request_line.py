@@ -12,6 +12,11 @@ _STATES = [
     ("done", "Done"),
 ]
 
+class ProjectCodePr(models.Model):
+    _name = 'project.code.pr'
+    _description = 'Project Code'
+
+    name = fields.Char(string='Project Code')
 
 class PurchaseRequestLine(models.Model):
 
@@ -20,8 +25,8 @@ class PurchaseRequestLine(models.Model):
     _inherit = ["mail.thread", "mail.activity.mixin"]
     _order = "id desc"
 
-    project_code = fields.Char(string='Project Code')
-    budget_code = fields.Char(string='Budget Code')
+    project_code_id = fields.Many2one(string='Project Code', comodel_name='project.code.pr', ondelete='restrict')
+    budget_code_pr = fields.Char(string='Budget Code')
 
     name = fields.Char(string="Description", tracking=True)
     product_uom_id = fields.Many2one(
