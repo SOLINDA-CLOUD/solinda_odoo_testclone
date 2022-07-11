@@ -21,9 +21,9 @@
         <xpath expr="//field[@name='line_ids']/tree/field[@name='date_plan_required']" position="after">
           <field name="delivery_location_id"/>
         </xpath>
-        <!-- <xpath expr="//field[@name='line_ids']/tree/field[@name='qty_ordered']" position="before">
+        <xpath expr="//field[@name='line_ids']/tree/field[@name='qty_ordered']" position="before">
           <field name="merk_recommended"/>
-        </xpath> -->
+        </xpath>
       </field>
     </record>
 
