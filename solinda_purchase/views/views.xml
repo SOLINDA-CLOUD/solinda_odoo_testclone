@@ -8,11 +8,12 @@
         <field name="origin" position="after">
           <field name="merk_try" />
         </field>
-        <xpath expr="//field[@name='line_ids']/tree/field[@name='price_target']" position="before">
-          <field name="merk_recommended"/>
-        </xpath>
+        
         <xpath expr="//field[@name='line_ids']/tree/field[@name='schedule_date']" position="before">
           <field name="price_target"/>
+        </xpath>
+        <xpath expr="//field[@name='line_ids']/tree/field[@name='price_target']" position="before">
+          <field name="merk_recommended"/>
         </xpath>
         <xpath expr="//field[@name='line_ids']/tree/field[@name='schedule_date']" position="after">
           <field name="date_plan_required"/>
