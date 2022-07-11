@@ -14,7 +14,7 @@ _STATES = [
 
 class ProjectCodePr(models.Model):
     _name = 'project.code.pr'
-    _description = 'Project Code'
+    _description = 'Project Code Pr'
 
     name = fields.Char(string='Project Code')
 
