@@ -3,11 +3,13 @@
 
 from odoo import _, api, exceptions, fields, models
 
+# class ProjectCode(models.Model):
+#     _inherit = 'project.code.pr'
 
 class PurchaseOrder(models.Model):
     _inherit = "purchase.order"
 
-    project_code_po = fields.Many2one('project.code.pr', string='Project Code')
+    project_code_po = fields.Many2one('project.code.pr.name', string='Project Code')
 
     def _purchase_request_confirm_message_content(self, request, request_dict=None):
         self.ensure_one()
