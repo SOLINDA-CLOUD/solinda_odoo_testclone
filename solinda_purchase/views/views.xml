@@ -11,8 +11,8 @@
         <xpath expr="//field[@name='line_ids']/tree/field[@name='price_target']" position="before">
           <field name="merk_recommended"/>
         </xpath>
-        <xpath expr="//field[@name='line_ids']/tree/field[@name='qty_ordered']" position="after">
-          <field name="price_target"/>
+        <xpath expr="//field[@name='line_ids']/tree/field[@name='price_target']" position="after">
+          <field name="qty_ordered"/>
         </xpath>
         <xpath expr="//field[@name='line_ids']/tree/field[@name='schedule_date']" position="after">
           <field name="date_plan_required"/>
@@ -20,9 +20,9 @@
         <xpath expr="//field[@name='line_ids']/tree/field[@name='date_plan_required']" position="after">
           <field name="delivery_location_id"/>
         </xpath>
-        <xpath expr="//field[@name='line_ids']/tree/field[@name='qty_ordered']" position="before">
+        <!-- <xpath expr="//field[@name='line_ids']/tree/field[@name='qty_ordered']" position="before">
           <field name="merk_recommended"/>
-        </xpath>
+        </xpath> -->
       </field>
     </record>
 
