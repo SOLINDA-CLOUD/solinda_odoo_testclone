@@ -16,9 +16,9 @@
                     icon="fa-folder-open-o"
                 />
             </xpath>
-            <!-- <xpath expr="//field[@name='purchase_order_line']/tree/field[@name='taxes_id']" position="after">
+            <xpath expr="//field[@name='order_line']/tree/field[@name='taxes_id']" position="after">
                 <field name="project_code_id"/>
-            </xpath> -->
+            </xpath>
         </field>
     </record>
     <record id="purchase_order_line_form2" model="ir.ui.view">
