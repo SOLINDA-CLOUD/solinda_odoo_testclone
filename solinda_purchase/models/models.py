@@ -28,6 +28,8 @@ class PurchaseRequisitionLine(models.Model):
     price_target = fields.Float('Price Target')
     date_plan_required = fields.Date('Date Plan Required')
     delivery_location_id = fields.Many2one(string='Delivery Location', comodel_name='delivery.location', ondelete='restrict')
+    product_uom = fields.Many2one('uom.uom')
+
 
 # class PurchaseOrder(models.Model):
 #     _inherit = 'purchase.order'
