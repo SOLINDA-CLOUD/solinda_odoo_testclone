@@ -187,6 +187,7 @@
                   <field name="attn_id" />
                   <field name="phone" />
                   <field name="email" />
+                  <field name="ref_turnkey" />
 
                 </group>
                 <group string="Terms And Conditions">

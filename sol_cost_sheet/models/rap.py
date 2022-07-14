@@ -26,7 +26,8 @@ class CsRAP(models.Model):
     category_line_ids = fields.One2many('rap.category', 'rap_id', string='Category Line')
     ga_project_line_ids = fields.One2many('ga.project', 'rap_id', string='GA Project Line')
     waranty_line_ids = fields.One2many('waranty.waranty', 'rap_id', string='Waranty Line')
-
+    #########
+    project_manager = fields.Many2one('res.users', string='Porject Manager',default=lambda self:self.env.user.id)
     
     total_amount = fields.Float(compute='_compute_total_amount', string='Total Amount',store=True)
     total_amount_rab = fields.Float(compute='_compute_total_amount', string='Total RAB Amount',store=True)
@@ -35,6 +36,8 @@ class CsRAP(models.Model):
     is_approver = fields.Boolean(compute='_compute_is_approver', string='Is Approver')
     reason = fields.Text('Note')
     
+
+
     @api.model
     def create(self, vals):
         res = super(CsRAP, self).create(vals)

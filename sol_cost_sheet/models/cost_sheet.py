@@ -28,6 +28,7 @@ class CostSheet(models.Model):
     category_line_ids = fields.One2many('rab.category', 'cost_sheet_id', string='Category Line',copy=True)
     ga_project_line_ids = fields.One2many('ga.project', 'cost_sheet_id', string='GA Project Line',copy=True)
     waranty_line_ids = fields.One2many('waranty.waranty', 'cost_sheet_id', string='Waranty Line',copy=True)
+    ref_turnkey = fields.Char(string='Ref')
     
     
     subtotal = fields.Float(compute='_compute_subtotal', string='Subtotal',store=True)
