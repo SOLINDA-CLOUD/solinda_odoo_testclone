@@ -29,9 +29,9 @@
       <field name="model">purchase.order</field>
       <field name="inherit_id" ref="purchase.purchase_order_form"/>
       <field name="arch" type="xml">
-        <xpath expr="//field[@name='order_line']/tree/field[@name='taxes_id']" position="after">
+        <!-- <xpath expr="//field[@name='order_line']/tree/field[@name='taxes_id']" position="after">
           <field name="project_code_po"/>
-        </xpath>
+        </xpath> -->
         <xpath expr="//field[@name='order_line']/tree/field[@name='price_unit']" position="after">
           <field name="disc_po" widget="percentage"/>
         </xpath>

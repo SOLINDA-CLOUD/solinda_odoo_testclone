@@ -33,6 +33,7 @@ class PurchaseOrderLine(models.Model):
     _inherit = 'purchase.order.line'
 
     product_uom = fields.Many2one('uom.uom')
+    
     disc_po = fields.Float(string='Disc.%')
     price_subtotal = fields.Monetary(compute='_compute_price_subtotal', store=True)
 
