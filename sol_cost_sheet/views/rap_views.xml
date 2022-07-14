@@ -13,7 +13,7 @@
                     <field name="name" />
                     <field name="date_document" />
                     <field name="user_id" />
-                    <field name="project_manager" />
+                    <field name="project_manager" widget="many2one_avatar_user"/>
                     <field name="currency_id" invisible="1" />
                     <!-- <field name="total_amount" widget="monetary" options="{'currency_field': 'currency_id'}" /> -->
                     <field name="state" widget="badge" decoration-info="state == 'submit'" decoration-success="state == 'done'" />
@@ -47,7 +47,7 @@
                             <field name="project_id" readonly="1" />
                             <field name="reason" />
                             <!--  -->
-                            <field name="project_manager" />
+                            <field name="project_manager" widget="many2one_avatar"/>
                             <!--  -->
                             <field name="approval_id" invisible="1" />
                             <field name="approver_id" invisible="1" />
