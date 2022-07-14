@@ -24,17 +24,20 @@
       </field>
     </record>
 
-    <!-- <record id="purchase_order_view_form" model="ir.ui.view">
+    <record id="purchase_order_view_form" model="ir.ui.view">
       <field name="name">purchase.order.form</field>
       <field name="model">purchase.order</field>
       <field name="inherit_id" ref="purchase_order.view_purchase_order_form"/>
       <field name="arch" type="xml">
-        <xpath expr="//field[@name='purchase_order_line']/tree/field[@name='taxes_id']" position="after">
-          <field name="project_code_id"/>
+        <xpath expr="//field[@name='order_line']/tree/field[@name='taxes_id']" position="after">
+          <field name="project_code_po"/>
+        </xpath>
+        <xpath expr="//field[@name='order_line']/tree/field[@name='price_unit']" position="after">
+          <field name="disc_po" widget="percentage"/>
         </xpath>
       </field>
     </record>
-     -->
+    
 
   </data>
 </odoo>
