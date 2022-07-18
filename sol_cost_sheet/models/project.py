@@ -8,6 +8,11 @@ class ProjectProject(models.Model):
     rab_id = fields.Many2one('cost.sheet',related='sale_order_id.rab_id', string='RAB',store=True)
     rap_id = fields.Many2one('rap.rap', string='RAP')
     # purchase_id = fields.Many2one('purchase.requisition', string='RAP')
+    # user_id = fields.Many2one('rap.rap', string='Project Manager', required=True, default=_onchange_user_id)
+
+  
+
+
 
     def create_rap(self):
         

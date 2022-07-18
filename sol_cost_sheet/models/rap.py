@@ -7,6 +7,9 @@ class CsRAP(models.Model):
     _description = 'RAP'
     _inherit = ['portal.mixin','mail.thread', 'mail.activity.mixin']
     
+
+
+
     name = fields.Char('Name',tracking=True)
     crm_id = fields.Many2one('crm.lead', string='CRM',tracking=True)
     project_id = fields.Many2one('project.project', string='Project')
@@ -27,7 +30,7 @@ class CsRAP(models.Model):
     ga_project_line_ids = fields.One2many('ga.project', 'rap_id', string='GA Project Line')
     waranty_line_ids = fields.One2many('waranty.waranty', 'rap_id', string='Waranty Line')
     #########
-    project_manager = fields.Many2one('res.users', string='Porject Manager',default=lambda self:self.env.user.id)
+    project_manager = fields.Many2one('project.project', string='Project Manager', related='user_id.name', required=True)
     
     total_amount = fields.Float(compute='_compute_total_amount', string='Total Amount',store=True)
     total_amount_rab = fields.Float(compute='_compute_total_amount', string='Total RAB Amount',store=True)
@@ -36,7 +39,6 @@ class CsRAP(models.Model):
     is_approver = fields.Boolean(compute='_compute_is_approver', string='Is Approver')
     reason = fields.Text('Note')
     
-
 
     @api.model
     def create(self, vals):
